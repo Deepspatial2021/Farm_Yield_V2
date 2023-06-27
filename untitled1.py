@@ -19,7 +19,7 @@ env_df=env_df.dropna()
 #env_df=pd.read_excel("new data.xlsx")
 #env_df=env_df.dropna()
 
-season_dict={'Maize':"Rabi",'Paddy':"Kharif",'Sugarcane':"Kharif", 'Wheat':"Rabi" }
+season_dict={'Mustard':"Rabi",'Paddy':"Kharif",'Sugarcane':"Kharif", 'Wheat':"Rabi" }
 
 #%%
 html_temp = """
@@ -53,7 +53,7 @@ st.markdown(html_temp,unsafe_allow_html=True)
 left,right=st.columns(2)
 # Take Inputs
 with right:
-    crop=st.selectbox("Crop",['Maize','Paddy','Sugarcane', 'Wheat' ])
+    crop=st.selectbox("Crop",['Mustard','Paddy','Sugarcane', 'Wheat' ])
     district=st.selectbox("District",("Dehradun", "Champawat"),disabled=True)
     block=st.selectbox("Block",("Vikasnagar", "Dalu"),disabled=True)
     village=st.selectbox("Village",env_df['Village Name'].unique())
@@ -67,7 +67,7 @@ with right:
     season=season_dict[crop]
 
 # ['Area', 'Humidity', 'K', 'N', 'P', 'Precipitation', 'Temperature',
-#        'Crop Name_Maize', 'Crop Name_Paddy', 'Crop Name_Sugarcane',
+#        'Crop Name_Mustard', 'Crop Name_Paddy', 'Crop Name_Sugarcane',
 #        'Crop Name_Wheat']
 
 
@@ -80,7 +80,7 @@ area=inp_df.loc[(village,farm),'Area (Hectares)']
 rain=inp_df.loc[(village,farm),'Rainfall']    
 temp=inp_df.loc[(village,farm),'Temperature']
 humid=inp_df.loc[(village,farm),'Humidity']
-if crop=="Maize":
+if crop=="Mustard":
     crop_enc=[1,0,0,0]
 elif crop=="Paddy":
     crop_enc=[0,1,0,0]
