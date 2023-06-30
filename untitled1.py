@@ -8,7 +8,7 @@ from PIL import Image
 import pickle
 
 
-st.set_page_config(page_title='Farm Yield Prediction Model',layout="wide")
+st.set_page_config(page_title='Agriverse Platform',layout="wide")
 
 model = pickle.load(open('random_forest_regression_model.pkl', 'rb'))
 
@@ -27,7 +27,7 @@ html_temp = """
     <h2 style="color:white;text-align:center;">Crop Yield Predictor</h2>
     </div>
     <div style="background-color:white;padding:7px">
-    <h2 style="color:black;text-align:center;font-size:30px; font-weight:bold">Agriverse Platform</h2>
+    <h2 style="color:black;text-align:center;font-size:30px; font-weight:bold">Farm Yield Prediction Model</h2>
     </div>
     <style>
     [data-testid="stAppViewContainer"]{
