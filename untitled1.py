@@ -151,7 +151,7 @@ if st.button("Calculate",use_container_width=True):
     z1,z2=st.columns(2)
     with z1:
         st.subheader(season_text)
-        string_2=("Crop Yield of "+str(crop) +" = "+str(farm_yield)+"(tonnes/ha)").title()
+        string_2=("Crop Yield of "+str(crop) +" = "+str(farm_yield)+"(kg/ha)").title()
 #        st.success('Crop Yield of  [ {} ] on your farm'.format(result))
 #        st.subheader(":blue"[string_2])
         st.subheader(string_2)   
