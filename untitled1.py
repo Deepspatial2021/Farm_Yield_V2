@@ -24,7 +24,7 @@ season_dict={'Mustard':"Rabi",'Paddy':"Kharif",'Sugarcane':"Kharif", 'Wheat':"Ra
 #%%
 html_temp = """
     <div style="background-color:#032863;padding:10px">
-    <h2 style="color:white;text-align:center;">Crop Yield Predictor</h2>
+    <h2 style="color:white;text-align:center;">Agriverse Platform</h2>
     </div>
     <div style="background-color:white;padding:7px">
     <h2 style="color:black;text-align:center;font-size:30px; font-weight:bold">Farm Yield Prediction Model</h2>
